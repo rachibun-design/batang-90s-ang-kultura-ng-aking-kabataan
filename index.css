@@ -1,0 +1,74 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #0d0f12;
+    color: #e2e8f0;
+    overflow-x: hidden;
+  }
+}
+
+.font-serif-title {
+  font-family: 'Fredoka', cursive, sans-serif;
+}
+
+.font-retro-title {
+  font-family: 'Fredoka', cursive, sans-serif;
+}
+
+.font-handwritten {
+  font-family: 'Patrick Hand', cursive;
+}
+
+.font-mono-retro {
+  font-family: 'Space Mono', monospace;
+}
+
+.font-pixel {
+  font-family: 'VT323', monospace;
+}
+
+/* Retro Paper / Scrapbook background texture */
+.paper-pattern {
+  background-color: #faf7ee;
+  background-image: radial-gradient(#e5dec9 0.75px, transparent 0.75px), radial-gradient(#e5dec9 0.75px, #faf7ee 0.75px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+/* Washi tape effect */
+.washi-tape {
+  background: rgba(251, 191, 36, 0.75);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+  transform: rotate(-2deg);
+}
+
+/* CRT Scanlines Overlay Toggle */
+.crt-overlay::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  z-index: 20;
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+}
+
+/* Custom Scrollbar for Catalog & Modals */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}

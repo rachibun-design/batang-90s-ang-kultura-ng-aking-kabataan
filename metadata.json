@@ -1,0 +1,6 @@
+{
+  "name": "BATANG 90s: Ang Kultura ng Aking Kabataan",
+  "description": "An interactive Filipino nostalgia museum celebrating childhood, popular culture, street games, and everyday life from the 1990s through the early 2000s.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
